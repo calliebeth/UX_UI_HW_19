@@ -2,14 +2,24 @@
 console.log("Index is loading correctly!");
 
 
-$(document).ready(function(){
-    $("#flip").click(function(){
-      $("#panel").slideDown("slow");
-    });
-});
+$('.card').click(function(){
+  let index = $(this).index()
+  let currentCard = $('.card').eq(index)
+  let currentBody = $(`.card:eq(${index}) .card-body`)
 
-$(document).ready(function(){
-    $("#flip2").click(function(){
-      $("#panel2").slideDown("slow");
-    });
-  });
+  //if(currentBody.css('display') == 'block') {
+  //  currentBody.slideUp()
+  //} else {
+  //  $('.card-body').slideUp()
+  //  currentBody.slideDown()
+  //}
+  
+  if(currentCard.hasClass('active')) {
+    currentBody.slideUp()
+  } else {
+    currentBody.slideDown()
+  }
+
+  currentCard.toggleClass('active')
+
+})

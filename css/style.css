@@ -39,9 +39,45 @@ html {
     
 }
 
+#accordion-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #222222;
+    cursor: pointer;
+}
+
+.card-title {
+    font-family: 'Young Serif', serif;
+    font-size: 18pt;
+    text-align: left;
+    margin: 0;
+}
+
+.card-body {
+    display: none;
+    cursor: default;
+}
+ 
+
 h1 {
     font-family: 'Young Serif', serif;
-    font-size: 30pt;
+    font-size: 24pt;
     text-align: center;
     color: #9E2A25;
 }
@@ -51,101 +87,6 @@ h2 {
     font-size: 18pt;
     text-align: left;
     color: white;
-}
-
-.title {
-    float: left;
-}
-
-.arrow {
-    float: right;
-}
-
-.football {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    width: 50%;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #222222;
-}
-
-.baseball {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    width: 50%;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #222222;
-}
-
-.boxing {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    width: 50%;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #222222;
-}
-
-.mma {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    width: 50%;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #222222;
-}
-
-.soccer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    width: 50%;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #222222;
-}
-
-#panel, #flip {
-    padding: 5px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 1px #c3c3c3;
-}
-  
-#panel {
-    padding: 50px;
-    display: none;
 }
 
 .button1 {
